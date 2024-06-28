@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'NorseBold';
+    src: url("assets/Norse-Bold.otf") format("opentype");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.main-container{
+    display: flex;
+    width: 100%;
+}
+
+/* left side */
+
+.left-background > img{
+    width: 1000px;
+    height: 100vh;
+}
+
+.left-side-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.credit{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    z-index: 2;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.logo > img{
+    width: 120px;
+}
+
+.logo-with-text{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    flex-wrap: 1;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    top: 300px;
+}
+
+div .odin-text{
+    margin-top: 30px;
+}
+
+.odin-text{
+    color: white;
+    font-size: 128px;
+    font-family: 'NorseBold';
+}
+
+
+/* right side */
+
+.right-side-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraphs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 200px 100px 100px 60px;
+    background-color: rgba(0, 0, 0, 0.02); /* Semi-transparent background */
+    width: 100%;
+}
+
+.top-paragraph{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.form{
+    padding: 0px 0px 20px 60px;
+    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.3);
+}
+
+.form fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.form label {
+    display: block; /* Ensures labels are displayed as block elements */
+}
+
+.form h2 {
+    font-size: 24px;
+}
+
+.names{
+    display: flex;
+    width: 200px;
+}
+
+.email-and-number{
+    display: flex;
+    width: 200px;
+}
+
+.passwords{
+    display: flex;
+    width: 200px;
+}
+
+.account{
+    background-color: rgb(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 40px 100px 450px 60px;
+    gap: 20px; 
+}
+
+input{
+    padding: 5px 60px 5px 60px;
+}
+
+.create-account > button{
+    background-color: #596D48;
+    color: white;
+}
